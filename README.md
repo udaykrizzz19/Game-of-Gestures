@@ -1,6 +1,8 @@
-# 🪨✂️📃 Rock Paper Scissors: A Modern React Game
+# 🪨✂️📃 Rock Paper Scissors: Game of Gestures - A Modern React Game
 
-A visually appealing and highly interactive take on the classic Rock, Paper, Scissors game, built with React, Vite, and Framer Motion! This project prioritizes a polished user experience, boasting a clean and modern UI, engaging animations, and a fully responsive design that adapts seamlessly across devices, from mobile phones to desktop computers.
+A visually appealing and highly interactive take on the classic Rock, Paper, Scissors game! This project prioritizes a polished user experience, boasting a clean and modern UI, engaging animations, and a fully responsive design that adapts seamlessly across devices, from mobile phones to desktop computers.
+
+**🚀 Play the live demo now: [View on vercel](https://game-of-gestures.vercel.app/) 🚀**
 
 ## ✨ Core Features
 
@@ -10,8 +12,8 @@ A visually appealing and highly interactive take on the classic Rock, Paper, Sci
 *   **Animated Score Counter:** Numbers transition smoothly on updates, providing immediate and engaging feedback to the user. The animation is handled by a `AnimatedScore` component. 🔢
 *   **Themed Hand Icons:** Visually distinct hand icons are used for each choice (Rock, Paper, Scissors) and are colored to match the "hand color" theme, enhancing aesthetics and gameplay clarity. 🖐️
 *   **Theme Toggle:** Provides users with the ability to easily switch between light and dark themes for a personalized viewing experience, enhancing accessibility and user comfort.☀️🌑
-*   **Robust Animation State Management:** Implemented with an explicit `gameState` (picking, animating, result) and the mode="wait" prop on AnimatePresence components, guaranteeing a bug-free transition from one animation phase to the next. ⚙️
-*   **Play Again Button:** Clickable Button to reset the round with simple prompt and instructions. 🔄
+*   **Robust Animation State Management:** Implemented with an explicit `gameState` (picking, animating, result) and the `mode="wait"` prop on `AnimatePresence` components, guaranteeing a bug-free transition from one animation phase to the next. ⚙️
+*   **Play Again Button:** A clickable button to reset the round with simple prompt and instructions. 🔄
 *   **High-Quality Vector Graphics:** Crisp and scalable hand icons are used from "react-icons" for high-resolution support on any device. 🏆
 
 ## 🚀 Technologies Used
@@ -19,9 +21,7 @@ A visually appealing and highly interactive take on the classic Rock, Paper, Sci
 *   **React:** A declarative JavaScript library for building dynamic user interfaces, providing a component-based architecture for maintainable code.
 *   **Vite:** An extremely fast build tool and development server that leverages native ES modules for rapid development cycles and optimized production builds.
 *   **Framer Motion:** A production-ready motion library for React, enabling smooth and expressive animations with minimal code.
-*   **CSS Modules:** Provides locally scoped CSS class names, preventing naming collisions and ensuring modular and maintainable styling.
 *   **React Icons:** A library that allows you to use SVG icons from popular icon sets directly in your React components.
-*   **LocalStorage:** For local storage to save theme settings across browser sessions, so your preferences are remembered.
 
 ## 💻 Setup Locally
 
@@ -84,12 +84,9 @@ If you encounter any issues while running the game, or if you have any ideas for
 
 Contributions are always welcome! Whether it's bug fixes, new features, or design improvements, feel free to fork the repository and submit a pull request.
 
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-[Your Name]
+**udaykrizzz19**
 
 Feel free to contact me with any questions or suggestions! 🎉
