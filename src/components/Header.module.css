@@ -1,25 +1,26 @@
 /* src/components/Header.module.css */
 
 .header {
-  /* Removed background color to blend with the body */
   background-color: transparent;
   width: 100%;
   padding: 1.5rem 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0; /* Reduced margin */
 }
 
 .header h1 {
-  font-weight: 900; /* Bolder font weight for Nunito */
+  font-weight: 900;
   font-size: 3rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--header-text-color);
-  /* Added a subtle shadow to make the text pop */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
+  .header {
+    padding: 1rem 0; /* Less vertical padding */
+  }
   .header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Smaller title */
   }
 }

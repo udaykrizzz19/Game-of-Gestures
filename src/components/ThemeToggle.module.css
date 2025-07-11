@@ -1,7 +1,10 @@
+/* src/components/ThemeToggle.module.css */
 .toggleContainer {
-  margin-top: auto; /* Pushes the toggle to the bottom */
-  padding-top: 2rem;
+  margin-top: auto;
+  padding-top: 1rem; /* Reduced padding */
 }
+
+/* ... existing button styles ... */
 
 .toggleButton {
   background: none;
@@ -17,8 +20,19 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .toggleButton:hover {
   background-color: var(--text-color);
   color: var(--header-bg);
+}
+
+@media (max-width: 600px) {
+  .toggleContainer {
+    padding-top: 0;
+    margin-top: 0; /* Let flexbox handle spacing */
+  }
+  .toggleButton {
+    width: 40px; /* Smaller button */
+    height: 40px;
+    font-size: 1.2rem;
+  }
 }

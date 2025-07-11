@@ -3,26 +3,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Changed from space-between */
+  justify-content: flex-start;
   min-height: 100vh;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0 1rem 1rem 1rem; /* Reduced bottom padding */
 }
 
 .prompt {
-  margin-top: 1rem; /* Reduced margin */
+  margin-top: 1rem;
   font-size: 2rem;
   font-weight: bold;
-  height: 3rem; /* Reserve space to prevent layout shift */
+  height: 3rem; 
   transition: color 0.3s ease;
   color: var(--primary-text-color);
   opacity: 0.8;
 }
 
-/* This container holds either the choices or the battlefield */
 .gameArea {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 250px; /* Must match Battlefield's min-height */
+  min-height: 250px;
+}
+
+/* === MOBILE FIXES START HERE === */
+@media (max-height: 750px), (max-width: 600px) {
+  .appContainer {
+    /* This will distribute the elements vertically across the screen height */
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+  }
+
+  .prompt {
+    font-size: 1.5rem; /* Smaller prompt text */
+    margin-top: 0;
+    height: 2.5rem;
+  }
+
+  .gameArea {
+    min-height: 190px; /* Significantly reduced min-height */
+    margin-top: -1rem; /* Pull it up slightly */
+  }
 }

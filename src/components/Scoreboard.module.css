@@ -1,14 +1,17 @@
+/* src/components/Scoreboard.module.css */
+
 .scoreboard {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   gap: 2rem;
-  margin-bottom: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 0; /* Reduced margin */
+  background-color: var(--accent-color);
   padding: 1rem 3rem;
-  border-radius: 15px;
-  border: 2px solid var(--text-color);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .scoreCard {
@@ -19,19 +22,44 @@
 
 .scoreCard p {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1;
+  color: var(--primary-text-color);
 }
 
 .scoreCard span {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 700;
   text-transform: uppercase;
+  color: var(--primary-text-color);
+  opacity: 0.8;
 }
 
 .divider {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--text-color);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary-text-color);
+  opacity: 0.5;
+  padding-bottom: 1rem;
+}
+
+/* === MOBILE FIXES START HERE === */
+@media (max-width: 600px) {
+  .scoreboard {
+    padding: 0.5rem 1.5rem; /* Tighter padding */
+    gap: 1.5rem;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+  }
+  .scoreCard p {
+    font-size: 2.8rem; /* Drastically smaller score number */
+  }
+  .scoreCard span {
+    font-size: 0.75rem; /* Smaller "YOU" / "COMP" text */
+  }
+  .divider {
+    font-size: 2.5rem; /* Smaller colon */
+    padding-bottom: 0.75rem;
+  }
 }

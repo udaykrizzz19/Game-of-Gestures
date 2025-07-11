@@ -1,24 +1,21 @@
 /* src/components/Choices.module.css */
+/* ... existing desktop styles ... */
 
 .choices {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem; /* Slightly reduced gap */
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 
 .choiceButton {
   background: transparent;
-  /* Using the primary text color for the border */
   border: 7px solid var(--primary-text-color);
-  /* Reduced button size */
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  /* This is our "hand color" */
   color: var(--primary-text-color);
-  /* Reduced icon size */
   font-size: 3.5rem;
   cursor: pointer;
   display: flex;
@@ -27,11 +24,12 @@
   transition: all 0.3s ease;
 }
 
+/* ... existing hover styles ... */
+
 .choiceButton:hover:not(:disabled) {
-  /* Using the accent color for hover */
   background-color: var(--accent-color);
   border-color: var(--accent-color);
-  color: #fff; /* Make icon white on hover for contrast */
+  color: #fff;
   transform: translateY(-10px);
 }
 
@@ -43,11 +41,12 @@
 @media (max-width: 600px) {
   .choices {
     gap: 1.5rem;
+    margin-top: 0; /* Remove top margin */
   }
   .choiceButton {
-    width: 90px;
-    height: 90px;
-    font-size: 2.5rem;
-    border-width: 5px;
+    width: 85px; /* Smaller button */
+    height: 85px;
+    font-size: 2.2rem; /* Smaller icon inside */
+    border-width: 5px; /* Thinner border */
   }
 }
