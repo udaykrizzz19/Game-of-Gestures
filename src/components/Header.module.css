@@ -1,0 +1,25 @@
+/* src/components/Header.module.css */
+
+.header {
+  /* Removed background color to blend with the body */
+  background-color: transparent;
+  width: 100%;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-weight: 900; /* Bolder font weight for Nunito */
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--header-text-color);
+  /* Added a subtle shadow to make the text pop */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+}

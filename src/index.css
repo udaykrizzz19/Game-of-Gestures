@@ -1,0 +1,43 @@
+/* src/index.css */
+
+:root {
+  /* New Aesthetic Color Palette */
+  --bg-color: #1B3C53; /* Deep dark blue */
+  --accent-color: #456882; /* Muted dusky blue */
+  --primary-text-color: #D2C1B6; /* Warm light beige */
+  --header-text-color: #ffffff;
+
+  /* Result Colors */
+  --win-color: #4CAF50; /* A nice, vibrant green */
+  --lose-color: #E57373; /* A softer red */
+  --draw-color: #A9A9A9; /* A light grey */
+
+  /* New Font */
+  --font-family: 'Nunito', sans-serif;
+}
+
+/* 
+  You can still define a light theme if you want,
+  but the default is now our beautiful dark theme.
+*/
+[data-theme='light'] {
+  --bg-color: #f0f0f0;
+  --accent-color: #ffffff;
+  --primary-text-color: #1B3C53;
+  --header-text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+  font-family: var(--font-family);
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+}

@@ -1,0 +1,53 @@
+/* src/components/Choices.module.css */
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* Slightly reduced gap */
+  margin-top: 2rem;
+}
+
+.choiceButton {
+  background: transparent;
+  /* Using the primary text color for the border */
+  border: 7px solid var(--primary-text-color);
+  /* Reduced button size */
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  /* This is our "hand color" */
+  color: var(--primary-text-color);
+  /* Reduced icon size */
+  font-size: 3.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.choiceButton:hover:not(:disabled) {
+  /* Using the accent color for hover */
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #fff; /* Make icon white on hover for contrast */
+  transform: translateY(-10px);
+}
+
+.choiceButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+@media (max-width: 600px) {
+  .choices {
+    gap: 1.5rem;
+  }
+  .choiceButton {
+    width: 90px;
+    height: 90px;
+    font-size: 2.5rem;
+    border-width: 5px;
+  }
+}

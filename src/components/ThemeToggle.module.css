@@ -1,0 +1,24 @@
+.toggleContainer {
+  margin-top: auto; /* Pushes the toggle to the bottom */
+  padding-top: 2rem;
+}
+
+.toggleButton {
+  background: none;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggleButton:hover {
+  background-color: var(--text-color);
+  color: var(--header-bg);
+}
